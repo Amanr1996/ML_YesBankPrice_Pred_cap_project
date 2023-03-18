@@ -1,5 +1,4 @@
-
-#**Yesbank stock price prediction.**
+# Project Title
 
 **Overview**
 
@@ -58,4 +57,3 @@ In conclusion, this project demonstrated the effectiveness of machine learning a
 * All of the implemented models performed quite well on our data giving us the Adjusted R-square of over 99%.
 * We checked for presence of Heterodasceticity in our dataset by plotting the residuals against the Elastic Net model predicted value and found that there is no Heterodasceticity present. Our model is performing well on all data-points.
 With our model making predictions with such high accuracy, we can confidently deploy this model for further predictive tasks using future data.
-
