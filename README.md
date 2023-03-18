@@ -4,6 +4,14 @@
 
 This project uses machine learning algorithms to predict the stock price of Yes Bank, a leading Indian financial services company. The project utilizes historical stock prices and several features such as Opening, Closing, Highest, lowestprice of the stock  to make the predictions. The machine learning algorithms used include linear regression, Ridge, Lasso, Elastic Net, Random Forest, and Decision Tree.
 
+**Problem Statement **
+
+The problem at hand is to predict the closing price of Yes Bank stock using historical data. The dataset consists of daily stock prices for Yes Bank from May 2005 to September 2020. The aim is to build a regression model that takes into account the opening, high and low prices of the stock as input features and outputs the predicted closing price for the next day.
+
+The model will be trained on the historical data and will be evaluated on a test set of data. The performance of the model will be measured using metrics such as Mean Squared Error (MSE), Root Mean Squared Error (RMSE), R-squared (R2) score, and Mean Absolute Scaled Error (MASE).
+
+**The main objective is to build an accurate and reliable model that can be used to make predictions about the future closing price of Yes Bank stock. Such a model would be of great value to investors and traders who are looking to make informed decisions about buying, selling, or holding Yes Bank stock.**
+
 **Data**
 
 The dataset used in this project contains monthly stock prices of Yes Bank from 2010 to 2021, along with several features such as company financials (e.g. revenue, net income), economic indicators (e.g. GDP growth, inflation), and news sentiment (e.g. positive/negative news articles). The dataset consists of 133 monthly observations, with each observation containing the following variables:
@@ -57,3 +65,16 @@ In conclusion, this project demonstrated the effectiveness of machine learning a
 * All of the implemented models performed quite well on our data giving us the Adjusted R-square of over 99%.
 * We checked for presence of Heterodasceticity in our dataset by plotting the residuals against the Elastic Net model predicted value and found that there is no Heterodasceticity present. Our model is performing well on all data-points.
 With our model making predictions with such high accuracy, we can confidently deploy this model for further predictive tasks using future data.
+
+**Future Scope**
+
+* Based on the analysis performed, there are a few areas that could be explored further:
+
+* Time series modeling: The current analysis focused on descriptive statistics and regression modeling to predict the closing price. However, there is scope to explore time series modeling techniques such as ARIMA or Prophet to better capture the temporal dependencies and trends in the data.
+
+* Feature engineering: The current analysis used only the Open, High, and Low prices as features for the regression model. However, there may be additional features that could be engineered from the data such as trading volumes, news sentiment, or macroeconomic indicators that could improve the model's predictive power.
+
+* Ensemble methods: Another area of exploration could be to use ensemble methods such as random forests or gradient boosting to combine the predictions of multiple models and potentially improve the overall performance.
+
+* External data sources: Finally, incorporating external data sources such as social media sentiment or news articles related to Yes Bank or the banking industry could provide additional insights and potentially improve the model's performance.
+
