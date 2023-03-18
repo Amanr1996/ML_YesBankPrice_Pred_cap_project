@@ -4,7 +4,7 @@
 
 This project uses machine learning algorithms to predict the stock price of Yes Bank, a leading Indian financial services company. The project utilizes historical stock prices and several features such as Opening, Closing, Highest, lowestprice of the stock  to make the predictions. The machine learning algorithms used include linear regression, Ridge, Lasso, Elastic Net, Random Forest, and Decision Tree.
 
-**Problem Statement **
+**Problem Statement**
 
 The problem at hand is to predict the closing price of Yes Bank stock using historical data. The dataset consists of daily stock prices for Yes Bank from May 2005 to September 2020. The aim is to build a regression model that takes into account the opening, high and low prices of the stock as input features and outputs the predicted closing price for the next day.
 
@@ -54,16 +54,40 @@ The Random Forest algorithm performed the best with a mean squared error of 2.84
 
 In conclusion, this project demonstrated the effectiveness of machine learning algorithms in predicting the stock price of Yes Bank. The Random Forest algorithm was found to be the best performing algorithm, followed by Linear Regression. These results can be used by investors and traders to make informed decisions regarding Yes Bank stocks. However, it is important to note that stock prices are influenced by several factors, and the predictions made by these models should be taken as one of several factors to consider when making investment decisions.
 
+After analyzing the Yes Bank stock price data, we can draw the following conclusions:
+
+* Yes Bank's stock price experienced significant fluctuations between 2005 to 2020, indicating a volatile market.
+
+* The monthly moving average analysis suggests that the stock price was declining consistently over time.
+
+* The correlation analysis shows that there is a strong positive correlation between the Open, High, Low, and Close variables, indicating that they all move in the same direction.
+
+* The data is positively skewed and has outliers, indicating that some data points are very different from the others. This indicates that the data might not be normally distributed and needs to be treated before fitting the model.
+
+* The regression analysis shows that the model can predict the closing price of the stock with a reasonable degree of accuracy. However, the model can be improved by tuning the hyperparameters and using different algorithms.
+
+
+* Overall, the project provides insights into the stock price behavior of Yes Bank, which can be useful for investors and traders in making informed decisions. The project also highlights the importance of data analysis and modeling in understanding the financial market and predicting future trends.
+
+
 * Using data visualization on our target variable, we can clearly see the impact of 2018 fraud case involving Rana Kapoor as the stock prices decline dramatically during that period.
 
 * After loading the dataset, we found that there are no null values in our dataset nor any duplicate data.
+* 
 * There are some outliers in our features however this being a very small dataset, dropping those instances will lead to loss of information.
+* 
 * We found that the distribution of all our variables is positively skewed. so we performed log transformation on them.
+* 
 * There is a high correlation between the dependent and independent variables. *  This is a signal that our dependent variable is highly dependent on our features and can be predicted accurately from them.
+* 
 * We found that there is a rather high correlation between our independent variables. This multicollinearity is however unavoidable here as the dataset is very small.
-* We implemented several models on our dataset in order to be able to predict the closing price and found that all our models are performing remarkably well and Elastic Net regressor is the best performing model with Adjusted R2 score value of 0.9932 and scores well on all evaluation metrics.
+* 
+* We implemented several models on our dataset in order to be able to predict the closing price and found that all our models are performing remarkably well
+
 * All of the implemented models performed quite well on our data giving us the Adjusted R-square of over 99%.
+
 * We checked for presence of Heterodasceticity in our dataset by plotting the residuals against the Elastic Net model predicted value and found that there is no Heterodasceticity present. Our model is performing well on all data-points.
+
 With our model making predictions with such high accuracy, we can confidently deploy this model for further predictive tasks using future data.
 
 **Future Scope**
